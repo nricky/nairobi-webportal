@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+#Nairobi Web Portal
+> Powered by Silverstripe
+
 ## Overview
 
 Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Requires additional modules to function:
@@ -51,8 +53,3 @@ If you would like to make changes to the SilverStripe core codebase, we have an 
 	STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
 	OF SUCH DAMAGE.
 =======
-nairobi-webportal
-=================
-
-Nairobi's web portal
->>>>>>> 052251174f8e9956d26f60dbef6315511ecbe909
