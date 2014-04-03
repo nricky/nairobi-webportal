@@ -7,7 +7,7 @@ global $databaseConfig;
 $databaseConfig = array(
 	"type" => 'MySQLDatabase',
 	"server" => 'localhost',
-	"username" => 'root',
+	"username" => 'silverstripe',
 	"password" => 'root',
 	"database" => 'SS_mysite',
 	"path" => '',
