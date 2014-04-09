@@ -30,8 +30,35 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-		// You can include any CSS or JS required by your project here.
-		// See: http://doc.silverstripe.org/framework/en/reference/requirements
+		$ThemeDir =  $this->ThemeDir();
+		Requirements::set_write_js_to_body( true );
+		Requirements::set_combined_files_folder( $ThemeDir.'/_requirements' );
+		Requirements::combine_files(
+			'site.css',
+			array(
+				$ThemeDir.'/css/site.css',
+				$ThemeDir.'/css/application.css'
+			)
+		);
+		Requirements::javascript( "//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" );
+		Requirements::combine_files(
+			'site.js',
+			array(
+				$ThemeDir.'/javascript/libs.js',
+				$ThemeDir.'/bower_components/bootstrap/js/affix.js',
+				$ThemeDir.'/bower_components/bootstrap/js/alert.js',
+				$ThemeDir.'/bower_components/bootstrap/js/button.js',
+				$ThemeDir.'/bower_components/bootstrap/js/carousel.js',
+				$ThemeDir.'/bower_components/bootstrap/js/collapse.js',
+				$ThemeDir.'/bower_components/bootstrap/js/dropdown.js',
+				$ThemeDir.'/bower_components/bootstrap/js/modal.js',
+				$ThemeDir.'/bower_components/bootstrap/js/tooltip.js',
+				$ThemeDir.'/bower_components/bootstrap/js/popover.js',
+				$ThemeDir.'/bower_components/bootstrap/js/scrollspy.js',
+				$ThemeDir.'/bower_components/bootstrap/js/tab.js',
+				$ThemeDir.'/bower_components/bootstrap/js/transition.js',
+				$ThemeDir.'/javascript/main.js'
+			)
+		);
 	}
-
 }

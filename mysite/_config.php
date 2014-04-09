@@ -9,7 +9,7 @@ $databaseConfig = array(
 	"server" => 'localhost',
 	"username" => 'silverstripe',
 	"password" => 'root',
-	"database" => 'SS_mysite',
+	"database" => 'silverstripe_ncc',
 	"path" => '',
 );
 

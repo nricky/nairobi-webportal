@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "351c3c25e8ad3f3e9bec6672374d4746",
+    "hash": "71cdd8623dd0f450682e68e69383cc9f",
     "packages": [
         {
             "name": "composer/installers",
@@ -88,6 +88,48 @@
                 "zikula"
             ],
             "time": "2014-03-26 23:15:27"
+        },
+        {
+            "name": "jeffwhitfield/silverstripe-bootstrap-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffwhitfield/silverstripe-bootstrap-theme.git",
+                "reference": "3fc329974b150d0c9ead7c51ac5c73d4e1023737"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffwhitfield/silverstripe-bootstrap-theme/zipball/3fc329974b150d0c9ead7c51ac5c73d4e1023737",
+                "reference": "3fc329974b150d0c9ead7c51ac5c73d4e1023737",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0"
+            },
+            "replace": {
+                "jeffwhitfield/silverstripe-bootstrap-theme": "*"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "installer-name": "bootstrap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Whitfield",
+                    "homepage": "http://thejeffwhitfield.com"
+                }
+            ],
+            "description": "A SilverStripe Bootstrap theme that incorporates HTML5 Boilerplate, Twitter Bootstrap, and Font Awesome",
+            "keywords": [
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2014-02-28 21:39:53"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -226,9 +268,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "jeffwhitfield/silverstripe-bootstrap-theme": 20
+    },
     "platform": {
         "php": ">=5.3.2"
     },
