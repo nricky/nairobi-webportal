@@ -110,7 +110,7 @@ class GridFieldSortableHeader implements GridField_HTMLProvider, GridField_DataM
 					if($tmpItem instanceof SS_List) {
 						// It's impossible to sort on a HasManyList/ManyManyList
 						break;
-					} elseif($tmpItem->hasMethod($methodName)) {
+					} elseif($tmpItem->hasMethod($this->methodName)) {
 						// The part is a relation name, so get the object/list from it
 						$tmpItem = $tmpItem->$methodName();
 					} elseif($tmpItem instanceof DataObject && $tmpItem->hasField($methodName)) {
